@@ -1,0 +1,7 @@
+AppBundle\Entity\ShippingMethod:
+    type: entity
+    table: sylius_shipping_method
+    fields:
+        estimatedDeliveryTime:
+            type: string
+            nullable: true

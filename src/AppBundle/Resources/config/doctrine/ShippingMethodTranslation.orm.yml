@@ -1,0 +1,7 @@
+AppBundle\Entity\ShippingMethodTranslation:
+    type: entity
+    table: sylius_shipping_method_translation
+    fields:
+        deliveryConditions:
+            type: string
+            nullable: true

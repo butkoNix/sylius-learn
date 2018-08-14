@@ -1,0 +1,7 @@
+AppBundle\Entity\Country:
+    type: entity
+    table: sylius_country
+    fields:
+        flag:
+            type: boolean
+            nullable: true

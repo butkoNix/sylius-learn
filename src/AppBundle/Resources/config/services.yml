@@ -1,0 +1,10 @@
+services:
+    app.form.extension.type.customer_profile:
+        class: AppBundle\Form\Extension\CustomerProfileTypeExtension
+        tags:
+            - { name: form.type_extension, extended_type: Sylius\Bundle\CustomerBundle\Form\Type\CustomerProfileType }
+    app.factory.product:
+            class: AppBundle\Factory\ProductFactory
+            decorates: sylius.factory.product
+            arguments: ['@app.factory.product.inner']
+            public: false
